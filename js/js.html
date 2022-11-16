@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sistema de multa</h1>
+    <label for="">Velocidade:</label> <input type="number" id="vel">
+    <input type="button" value="verificar" onclick="verifica()">
+    <p id="res"><strong>Resultado</strong></p>
+    <p id="recado"></p>
+
+    <script>
+        var vel = document.querySelector('input#vel');
+        var res = document.querySelector('p#res');
+        var rec = document.querySelector('p#recado');
+       function verifica(){
+        var velocidade = Number(vel.value)
+        if( velocidade > 50){
+            res.innerHTML="Você está acima do limite de velocidade!";
+            res.style.background="red";
+            res.style.color="#fff";
+            rec.innerHTML="Dirija sempre usando o cinto de seurança!";
+        }else{
+            if(velocidade <=50){
+                res.innerHTML='Você está dentro do limite de velocidade!'
+                rec.innerHTML="Dirija sempre usando o cinto de seurança!";
+                res.style.background='green';
+                res.style.color='white'
+
+            }
+        }
+       }
+     
+        
+
+        
+    </script>
+</body>
+</html>

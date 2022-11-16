@@ -1,0 +1,195 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.theme_1{
+--background-resetdel:rgb(86, 41, 247);
+
+--background-body:url('../img/tema-escuro.jpg');
+--border:#000000;
+}
+
+.theme_2{
+    --background-resetdel:rgb(86, 41, 247);
+    --background-body:url('../img/claro-tema.jpg');
+    --border:#ffff;
+  
+   
+    }
+
+body, html{
+    
+    height: 100vh;
+    width: 100vw;
+   
+    background-image: var(--background-body);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+.container_principal{
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.div_chec{
+    display: flex;
+
+}
+.container_topo{
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+    font-size: 0.4em;
+    color: #fff;
+}
+.container1{
+    width: 45%;
+    padding: 5px;
+    margin: 0px 0px 10px 0px;
+    background-color: rgb(44, 44, 117);
+    border-radius: 5px;
+}
+.input_res{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(44, 44, 117); 
+    border-style: none;
+   color: #fff;
+   font-size: 1.6em;
+   
+    
+}
+.container{
+    padding: 5px;
+    width: 45%;
+    height: 40%;
+    background-color: rgb(44, 44, 117);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-shadow: 2px 2px 6px ;
+    box-shadow: 3px 3px 10px  var(--border);
+    
+}
+.button{
+    width: 100%;
+    
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em;
+   
+    border-radius: 5px;
+  
+}
+
+
+.container_div{
+    height:20%;
+    width: 25%;
+   
+   
+    
+}
+
+.button{
+    width: 100%; 
+    height: 100%;
+}
+.del{
+    font-size: 1.0em;
+}
+.button:active{
+    transform: scale(0.1);
+}
+
+.button:hover{
+    background: rgb(115, 115, 250);
+    transition: 0.5s;
+}
+
+.reset{
+   
+    color: #fff;
+    height: 60%;
+    flex-grow: 1;
+    height: 15%;
+}
+
+.button_reset{
+    width: 100%;
+    height: 100%;
+    background: var(--background-resetdel);
+    font-weight: bold;
+    font-size: 1.1em;
+    
+}
+.button_reset:active{
+    transform: scale(0.9);
+}
+.button_reset:hover{
+    background: rgb(115, 115, 250);
+    transition: 0.5s;
+}
+
+.igual{
+   
+    color: #fff;
+    height: 60%;
+    flex-grow: 1;
+    height: 15%;
+}
+
+.button_igual{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 47, 47);
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1em;
+    
+}
+.button_igual:active{
+    transform: scale(0.9);
+}
+
+.button_igual:hover{
+    background: rgb(115, 115, 250);
+    transition: 0.5s;
+}
+.del{
+    background-color: var(--background-resetdel);
+}
+
+
+
+
+
+@media screen and (max-width:320px){
+    .container{
+        width: 80%;
+    }
+    .container_topo{
+        width: 80%;
+    }
+    .container1{
+        width: 80%;
+    }
+    .input_res{
+        width: 80%;
+    }
+}
+@media screen and (max-height:320px){
+    .container{
+        width: 80%;
+        height: 70%;
+    }
+}

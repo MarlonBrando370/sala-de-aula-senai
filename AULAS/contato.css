@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    height: 100vh;
+   
+}
+
+header{
+    background-color: #353131;
+    /*position: fixed;*/
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    color: rgb(255, 253, 253);
+    text-align: center;
+
+    
+}
+header > h1{
+    color: #fff;
+    background-color: rgb(255, 0, 0);
+    font-size: 2em;
+    font-weight: bolder;
+    margin: 8px;
+    padding: 3px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+}
+
+
+nav > a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size:1.1em;
+    font-weight: bold;
+    background-color: rgb(255, 0, 0);
+    border-radius: 5px;
+    padding: 4px 5px;
+   margin: 3px;
+}
+
+nav > a:active{
+    color: #000000;
+}
+nav > a:hover{
+  text-decoration: underline;
+   
+    
+}
+
+  .titulo__con{
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+ 
+  
+.legend__formulario{
+  font-size: 1.8em;
+}
+  .formulario{
+    background-color: #fff;
+    width: 500px;
+    height: calc(100vh - 160px);
+    padding: 10px;
+    display: flex;
+   flex-direction: column;
+
+}
+#textarea{
+    margin: 10px 0px;
+}
+
+fieldset > legend{
+    text-align: center;
+}
+.botao{
+    width: 80px;
+    margin-top: 30px;
+}
+
+#dados{
+    
+    width: 100vw;
+    height: 100vh;
+}
+.checkbox{
+   padding: 5px;
+
+}
+.input{
+    padding: 5px;
+    margin-bottom: 10px;
+    
+}
+
+
+.texto{
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 8px;
+    padding-left: 5px;
+    width: 200px;
+    height: 20px;
+}
+footer{
+    width: 100vw;
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    
+}
+.a__footer{
+    text-decoration: none;
+    color: rgb(248, 18, 18);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.a__footer:hover{
+    text-decoration: underline;
+    
+}
+
+.logo{
+    width: 40px;
+    height: 40px;
+}

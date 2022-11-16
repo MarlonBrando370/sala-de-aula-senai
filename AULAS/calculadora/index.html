@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="body" class="theme_1">
+
+    <main class="container_principal">
+        <div class="container_topo">
+            <h1>calc</h1>
+            <div class="div_chec">
+                <h1>theme</h1>
+                <input type="checkbox" name="theme" id="theme" class="theme" onchange="tema()">
+              
+            </div>
+        </div> 
+
+        <div class="container1">
+            <input  class="input_res displey"  id="disple" disabled >
+        </div>
+
+        <div class="container">
+                
+            <div class="container_div">
+                <input type="button" value="7" class="button" onclick="insertNum(7)">    
+            </div>
+
+            <div class="container_div" >
+
+                <input type="button" value="8" class="button" onclick="insertNum(8)">
+            </div>
+
+            <div class="container_div">
+
+                <input type="button" value="9" class="button" onclick="insertNum(9)">
+            </div>
+
+            <div class="container_div">
+                <input type="button" value="DEL" class="button del"  onclick="insertDel('del')">
+            </div>    
+
+            <div class="container_div">
+                <input type="button" value="4" class="button" onclick="insertNum(4)">
+            </div>
+
+            <div class="container_div">
+                 <input type="button" value="5" class="button" onclick="insertNum(5)">
+            </div>
+
+            <div class="container_div">
+                <input type="button" value="6" class="button" onclick="insertNum(6)">
+            </div>
+
+            <div class="container_div">
+                <input type="button" value="+" class="button" id="mais"  onclick="insertNum('+')" >
+            </div>
+
+            <div class="container_div">
+                <input type="button" value="1" class="button" onclick="insertNum(1)">
+            </div>
+
+            <div class="container_div">
+                <input type="button" value="2" class="button" onclick="insertNum(2)">
+            </div>
+
+            <div class="container_div">
+                <input type="button" value="3" class="button" onclick="insertNum(3)">
+            </div>
+
+            <div class="container_div">
+                <input type="button" value="-" class="button" onclick="insertNum('-')">
+            </div>
+
+            <div class="container_div">
+                <button  class="button"  onclick="insertNum('.')">.</button>  
+            </div>
+
+            <div class="container_div">
+                <input type="button" value="0" class="button" onclick="insertNum(0)">
+            </div>
+
+            <div class="container_div">
+                <input type="button" value="/" class="button"  onclick="insertNum('/')" >
+            </div>
+
+            <div class="container_div">
+                <input type="button" value="x" class="button"  onclick="insertNum('*')">
+            </div>
+
+            <div class="container_div reset ">
+                <input type="button" value="reset" class="reset button_reset" onclick="insertReset('reset')">
+            </div>
+            
+            <div class="container_div igual">
+                <input type="button" value="=" class=" button_igual" onclick="calc()">
+            </div>
+            
+        
+        
+        </div>
+
+
+        
+
+        
+
+       
+
+    </main>
+    <script src="css/script/script.js"></script>
+</body>
+</html>
